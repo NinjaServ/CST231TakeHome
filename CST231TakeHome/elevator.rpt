@@ -1,0 +1,914 @@
+Project Information                             z:\cst231takehome\elevator.rpt
+
+MAX+plus II Compiler Report File
+Version 10.2 07/10/2002
+Compiled: 03/17/2003 16:19:52
+
+Copyright (C) 1988-2002 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+elevator  EPM7064LC44-15   8        17       0      44      8           68 %
+
+User Pins:                 8        17       0  
+
+
+
+Project Information                             z:\cst231takehome\elevator.rpt
+
+** AUTO GLOBAL SIGNALS **
+
+
+
+INFO: Signal 'clk' chosen for auto global Clock
+
+
+Project Information                             z:\cst231takehome\elevator.rpt
+
+** FILE HIERARCHY **
+
+
+
+|lpm_add_sub:932|
+|lpm_add_sub:932|addcore:adder|
+|lpm_add_sub:932|addcore:adder|addcore:adder0|
+|lpm_add_sub:932|altshift:result_ext_latency_ffs|
+|lpm_add_sub:932|altshift:carry_ext_latency_ffs|
+|lpm_add_sub:932|altshift:oflow_ext_latency_ffs|
+|lpm_add_sub:933|
+|lpm_add_sub:933|addcore:adder|
+|lpm_add_sub:933|addcore:adder|addcore:adder0|
+|lpm_add_sub:933|altshift:result_ext_latency_ffs|
+|lpm_add_sub:933|altshift:carry_ext_latency_ffs|
+|lpm_add_sub:933|altshift:oflow_ext_latency_ffs|
+|lpm_add_sub:934|
+|lpm_add_sub:934|addcore:adder|
+|lpm_add_sub:934|addcore:adder|addcore:adder0|
+|lpm_add_sub:934|altshift:result_ext_latency_ffs|
+|lpm_add_sub:934|altshift:carry_ext_latency_ffs|
+|lpm_add_sub:934|altshift:oflow_ext_latency_ffs|
+|lpm_add_sub:935|
+|lpm_add_sub:935|addcore:adder|
+|lpm_add_sub:935|addcore:adder|addcore:adder0|
+|lpm_add_sub:935|altshift:result_ext_latency_ffs|
+|lpm_add_sub:935|altshift:carry_ext_latency_ffs|
+|lpm_add_sub:935|altshift:oflow_ext_latency_ffs|
+
+
+Device-Specific Information:                    z:\cst231takehome\elevator.rpt
+elevator
+
+***** Logic for device 'elevator' compiled without errors.
+
+
+
+
+Device: EPM7064LC44-15
+
+Device Options:
+    Turbo Bit                                    = OFF
+    Security Bit                                 = OFF
+
+                    R                    R  R  
+                    E                    E  E  
+                    S                    S  S  
+              C     E                    E  E  
+              A     R                    R  R  
+              L  F  V  V  G  G  G  c  G  V  V  
+              L  B  E  C  N  N  N  l  N  E  E  
+              2  3  D  C  D  D  D  k  D  D  D  
+            -----------------------------------_ 
+          /   6  5  4  3  2  1 44 43 42 41 40   | 
+   CALL3 |  7                                39 | RESERVED 
+     FB1 |  8                                38 | RESERVED 
+     FB2 |  9                                37 | RESERVED 
+     GND | 10                                36 | count2 
+   CALL1 | 11                                35 | VCC 
+   reset | 12         EPM7064LC44-15         34 | count1 
+      UD | 13                                33 | count0 
+     FI7 | 14                                32 | DOOR4 
+     VCC | 15                                31 | DOOR3 
+     FI6 | 16                                30 | GND 
+RESERVED | 17                                29 | DOOR2 
+         |_  18 19 20 21 22 23 24 25 26 27 28  _| 
+           ------------------------------------ 
+              R  F  F  F  G  V  D  F  D  D  F  
+              E  I  I  I  N  C  O  I  O  O  I  
+              S  3  4  5  D  C  O  2  O  O  1  
+              E                 R     R  R     
+              R                 0     5  1     
+              V                                
+              E                                
+              D                                
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCC = Dedicated power pin, which MUST be connected to VCC.
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+
+
+Device-Specific Information:                    z:\cst231takehome\elevator.rpt
+elevator
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16     0/16(  0%)   7/ 8( 87%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32    16/16(100%)   6/ 8( 75%)   5/16( 31%)  23/36( 63%) 
+C:    LC33 - LC48    12/16( 75%)   8/ 8(100%)   2/16( 12%)  13/36( 36%) 
+D:    LC49 - LC64    16/16(100%)   3/ 8( 37%)  12/16( 75%)  23/36( 63%) 
+
+
+Total dedicated input pins used:                 1/4      ( 25%)
+Total I/O pins used:                            24/32     ( 75%)
+Total logic cells used:                         44/64     ( 68%)
+Total shareable expanders used:                  8/64     ( 12%)
+Total Turbo logic cells used:                    0/64     (  0%)
+Total shareable expanders not available (n/a):  11/64     ( 17%)
+Average fan-in:                                  6.63
+Total fan-in:                                   292
+
+Total input pins required:                       8
+Total output pins required:                     17
+Total bidirectional pins required:               0
+Total logic cells required:                     44
+Total flipflops required:                       38
+Total product terms required:                  154
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:           8
+
+Synthesized logic cells:                         0/  64   (  0%)
+
+
+
+Device-Specific Information:                    z:\cst231takehome\elevator.rpt
+elevator
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  11    (3)  (A)      INPUT               0      0   0    0    0    0    1  CALL1
+   6   (11)  (A)      INPUT               0      0   0    0    0    0    1  CALL2
+   7    (8)  (A)      INPUT               0      0   0    0    0    0    1  CALL3
+  43      -   -       INPUT  G            0      0   0    0    0    0    0  clk
+   8    (5)  (A)      INPUT               0      0   0    0    0    0    1  FB1
+   9    (4)  (A)      INPUT               0      0   0    0    0    0    1  FB2
+   5   (14)  (A)      INPUT               0      0   0    0    0    0    1  FB3
+  12    (1)  (A)      INPUT               0      0   0    0    0   11   21  reset
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
+
+
+Device-Specific Information:                    z:\cst231takehome\elevator.rpt
+elevator
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  33     49    D         FF   +           0      0   0    1    4   13    3  count0
+  34     51    D         FF   +           1      0   1    1    5   14    3  count1
+  36     52    D         FF   +           0      0   0    1    3   16    3  count2
+  24     33    C         FF   +           0      0   0    0    3    0    0  DOOR0
+  27     37    C         FF   +           0      0   0    0    2    0    0  DOOR1
+  29     41    C         FF   +           0      0   0    0    3    0    0  DOOR2
+  31     46    C         FF   +           0      0   0    0    3    0    0  DOOR3
+  32     48    C         FF   +           0      0   0    0    2    0    0  DOOR4
+  26     36    C         FF   +           0      0   0    0    3    0    0  DOOR5
+  28     40    C         FF   +           1      0   1    1    8    1    0  FI1
+  25     35    C         FF   +           1      0   1    1    8    1    0  FI2
+  19     20    B         FF   +           1      0   1    1    8    1    0  FI3
+  20     19    B         FF   +           1      0   1    1    8    1    0  FI4
+  21     17    B         FF   +           1      0   1    1    8    1    0  FI5
+  16     25    B         FF   +           1      0   1    1    8    1    0  FI6
+  14     30    B         FF   +           1      0   1    1    8    1    0  FI7
+  13     32    B         FF   +           0      0   0    1    4    1    0  UD
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                    z:\cst231takehome\elevator.rpt
+elevator
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+ (41)    64    D       DFFE   +           0      0   0    1    3    0    7  read (:54)
+   -     60    D        OR2               0      0   0    1    2    0    5  :126
+   -     55    D        OR2               0      0   0    1    2    0    5  :127
+   -     58    D        OR2               0      0   0    1    2    0    5  :128
+   -     54    D        OR2               0      0   0    1    2    0    5  :204
+ (37)    53    D        OR2               0      0   0    1    2    0    5  :205
+   -     61    D        OR2               0      0   0    1    2    0    5  :206
+   -     59    D       DFFE   +           0      0   0    1   10    0    2  nextstate2 (:316)
+   -     63    D       DFFE   +           0      0   0    1   10    0    2  nextstate1 (:317)
+ (40)    62    D       DFFE   +           0      0   0    1   10    0    2  nextstate0 (:318)
+   -     50    D       DFFE   +           5      1   1    1   13   11   21  state2 (:526)
+ (38)    56    D       DFFE   +           3      1   1    1    7   11   21  state1 (:527)
+ (39)    57    D       DFFE   +           5      1   1    1    7    1   20  state0 (:528)
+ (17)    24    B       DFFE   +           0      0   0    1    4    1    1  prevFI7 (:769)
+   -     27    B       DFFE   +           0      0   0    1    4    1    1  prevFI6 (:770)
+   -     28    B       DFFE   +           0      0   0    1    4    1    1  prevFI5 (:771)
+   -     29    B       DFFE   +           0      0   0    1    4    1    1  prevFI4 (:772)
+   -     31    B       DFFE   +           0      0   0    1    4    1    1  prevFI3 (:773)
+   -     38    C       DFFE   +           0      0   0    1    4    1    1  prevFI2 (:774)
+   -     42    C       DFFE   +           0      0   0    1    4    1    1  prevFI1 (:775)
+   -     23    B       DFFE   +           0      0   0    1    4    1    1  nextFI7 (:805)
+   -     26    B       DFFE   +           0      0   0    1    4    1    1  nextFI6 (:806)
+   -     18    B       DFFE   +           0      0   0    1    4    1    1  nextFI5 (:807)
+ (18)    21    B       DFFE   +           0      0   0    1    4    1    1  nextFI4 (:808)
+   -     22    B       DFFE   +           0      0   0    1    4    1    1  nextFI3 (:809)
+   -     34    C       DFFE   +           0      0   0    1    4    1    1  nextFI2 (:810)
+   -     39    C       DFFE   +           0      0   0    1    4    1    1  nextFI1 (:811)
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                    z:\cst231takehome\elevator.rpt
+elevator
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                                         Logic cells placed in LAB 'B'
+        +------------------------------- LC20 FI3
+        | +----------------------------- LC19 FI4
+        | | +--------------------------- LC17 FI5
+        | | | +------------------------- LC25 FI6
+        | | | | +----------------------- LC30 FI7
+        | | | | | +--------------------- LC32 UD
+        | | | | | | +------------------- LC24 prevFI7
+        | | | | | | | +----------------- LC27 prevFI6
+        | | | | | | | | +--------------- LC28 prevFI5
+        | | | | | | | | | +------------- LC29 prevFI4
+        | | | | | | | | | | +----------- LC31 prevFI3
+        | | | | | | | | | | | +--------- LC23 nextFI7
+        | | | | | | | | | | | | +------- LC26 nextFI6
+        | | | | | | | | | | | | | +----- LC18 nextFI5
+        | | | | | | | | | | | | | | +--- LC21 nextFI4
+        | | | | | | | | | | | | | | | +- LC22 nextFI3
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | | | | | | | | | A B C D |     Logic cells that feed LAB 'B':
+LC20 -> * - - - - - - - - - - - - - - - | - * - - | <-- FI3
+LC19 -> - * - - - - - - - - - - - - - - | - * - - | <-- FI4
+LC17 -> - - * - - - - - - - - - - - - - | - * - - | <-- FI5
+LC25 -> - - - * - - - - - - - - - - - - | - * - - | <-- FI6
+LC30 -> - - - - * - - - - - - - - - - - | - * - - | <-- FI7
+LC32 -> - - - - - * - - - - - - - - - - | - * - - | <-- UD
+LC24 -> - - - - * - * - - - - - - - - - | - * - - | <-- prevFI7
+LC27 -> - - - * - - - * - - - - - - - - | - * - - | <-- prevFI6
+LC28 -> - - * - - - - - * - - - - - - - | - * - - | <-- prevFI5
+LC29 -> - * - - - - - - - * - - - - - - | - * - - | <-- prevFI4
+LC31 -> * - - - - - - - - - * - - - - - | - * - - | <-- prevFI3
+LC23 -> - - - - * - - - - - - * - - - - | - * - - | <-- nextFI7
+LC26 -> - - - * - - - - - - - - * - - - | - * - - | <-- nextFI6
+LC18 -> - - * - - - - - - - - - - * - - | - * - - | <-- nextFI5
+LC21 -> - * - - - - - - - - - - - - * - | - * - - | <-- nextFI4
+LC22 -> * - - - - - - - - - - - - - - * | - * - - | <-- nextFI3
+
+Pin
+43   -> - - - - - - - - - - - - - - - - | - - - - | <-- clk
+12   -> * * * * * * * * * * * * * * * * | - * * * | <-- reset
+LC49 -> * * * * * - - - - - - - - - - - | - * * * | <-- count0
+LC51 -> * * * * * - - - - - - - - - - - | - * * * | <-- count1
+LC52 -> * * * * * - - - - - - - - - - - | - * * * | <-- count2
+LC50 -> * * * * * * * * * * * * * * * * | - * * * | <-- state2
+LC56 -> * * * * * * * * * * * * * * * * | - * * * | <-- state1
+LC57 -> - - - - - * * * * * * * * * * * | - * * * | <-- state0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                    z:\cst231takehome\elevator.rpt
+elevator
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'C':
+
+                                 Logic cells placed in LAB 'C'
+        +----------------------- LC33 DOOR0
+        | +--------------------- LC37 DOOR1
+        | | +------------------- LC41 DOOR2
+        | | | +----------------- LC46 DOOR3
+        | | | | +--------------- LC48 DOOR4
+        | | | | | +------------- LC36 DOOR5
+        | | | | | | +----------- LC40 FI1
+        | | | | | | | +--------- LC35 FI2
+        | | | | | | | | +------- LC38 prevFI2
+        | | | | | | | | | +----- LC42 prevFI1
+        | | | | | | | | | | +--- LC34 nextFI2
+        | | | | | | | | | | | +- LC39 nextFI1
+        | | | | | | | | | | | | 
+        | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | |   that feed LAB 'C'
+LC      | | | | | | | | | | | | | A B C D |     Logic cells that feed LAB 'C':
+LC40 -> - - - - - - * - - - - - | - - * - | <-- FI1
+LC35 -> - - - - - - - * - - - - | - - * - | <-- FI2
+LC38 -> - - - - - - - * * - - - | - - * - | <-- prevFI2
+LC42 -> - - - - - - * - - * - - | - - * - | <-- prevFI1
+LC34 -> - - - - - - - * - - * - | - - * - | <-- nextFI2
+LC39 -> - - - - - - * - - - - * | - - * - | <-- nextFI1
+
+Pin
+43   -> - - - - - - - - - - - - | - - - - | <-- clk
+12   -> - - - - - - * * * * * * | - * * * | <-- reset
+LC49 -> * - * * - * * * - - - - | - * * * | <-- count0
+LC51 -> * * * * * * * * - - - - | - * * * | <-- count1
+LC52 -> * * * * * * * * - - - - | - * * * | <-- count2
+LC50 -> - - - - - - * * * * * * | - * * * | <-- state2
+LC56 -> - - - - - - * * * * * * | - * * * | <-- state1
+LC57 -> - - - - - - - - * * * * | - * * * | <-- state0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                    z:\cst231takehome\elevator.rpt
+elevator
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'D':
+
+                                         Logic cells placed in LAB 'D'
+        +------------------------------- LC49 count0
+        | +----------------------------- LC51 count1
+        | | +--------------------------- LC52 count2
+        | | | +------------------------- LC64 read
+        | | | | +----------------------- LC60 :126
+        | | | | | +--------------------- LC55 :127
+        | | | | | | +------------------- LC58 :128
+        | | | | | | | +----------------- LC54 :204
+        | | | | | | | | +--------------- LC53 :205
+        | | | | | | | | | +------------- LC61 :206
+        | | | | | | | | | | +----------- LC59 nextstate2
+        | | | | | | | | | | | +--------- LC63 nextstate1
+        | | | | | | | | | | | | +------- LC62 nextstate0
+        | | | | | | | | | | | | | +----- LC50 state2
+        | | | | | | | | | | | | | | +--- LC56 state1
+        | | | | | | | | | | | | | | | +- LC57 state0
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'D'
+LC      | | | | | | | | | | | | | | | | | A B C D |     Logic cells that feed LAB 'D':
+LC49 -> * * - - - - - - - - - - - * * * | - * * * | <-- count0
+LC51 -> - * - - - - - - - - - - - * * * | - * * * | <-- count1
+LC52 -> * * * - - - - - - - - - - * * * | - * * * | <-- count2
+LC64 -> - - - * * * * * * * - - - - - - | - - - * | <-- read
+LC60 -> - - - - * - - - - - * * * * - - | - - - * | <-- :126
+LC55 -> - - - - - * - - - - * * * * - - | - - - * | <-- :127
+LC58 -> - - - - - - * - - - * * * * - - | - - - * | <-- :128
+LC54 -> - - - - - - - * - - * * * * - - | - - - * | <-- :204
+LC53 -> - - - - - - - - * - * * * * - - | - - - * | <-- :205
+LC61 -> - - - - - - - - - * * * * * - - | - - - * | <-- :206
+LC59 -> - - - - - - - - - - * - - * - - | - - - * | <-- nextstate2
+LC63 -> - - - - - - - - - - - * - - * - | - - - * | <-- nextstate1
+LC62 -> - - - - - - - - - - - - * - - * | - - - * | <-- nextstate0
+LC50 -> * * * * - - - - - - * * * * * * | - * * * | <-- state2
+LC56 -> * * * * - - - - - - * * * * * * | - * * * | <-- state1
+LC57 -> - - - - - - - - - - * * * * * * | - * * * | <-- state0
+
+Pin
+11   -> - - - - - - - - - * - - - - - - | - - - * | <-- CALL1
+6    -> - - - - - - - - * - - - - - - - | - - - * | <-- CALL2
+7    -> - - - - - - - * - - - - - - - - | - - - * | <-- CALL3
+43   -> - - - - - - - - - - - - - - - - | - - - - | <-- clk
+8    -> - - - - - - * - - - - - - - - - | - - - * | <-- FB1
+9    -> - - - - - * - - - - - - - - - - | - - - * | <-- FB2
+5    -> - - - - * - - - - - - - - - - - | - - - * | <-- FB3
+12   -> * * * * - - - - - - * * * * * * | - * * * | <-- reset
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                    z:\cst231takehome\elevator.rpt
+elevator
+
+** EQUATIONS **
+
+CALL1    : INPUT;
+CALL2    : INPUT;
+CALL3    : INPUT;
+clk      : INPUT;
+FB1      : INPUT;
+FB2      : INPUT;
+FB3      : INPUT;
+reset    : INPUT;
+
+-- Node name is 'count0' = ':649' 
+-- Equation name is 'count0', type is output 
+ count0  = DFFE( _EQ001 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ001 = !count0 & !count2 & !reset &  state1 & !state2
+         # !count0 & !count2 & !reset & !state1 &  state2
+         #  count0 & !reset &  state1 &  state2;
+
+-- Node name is 'count1' = ':648' 
+-- Equation name is 'count1', type is output 
+ count1  = DFFE( _EQ002 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ002 = !count0 &  count1 & !count2 & !reset &  state1
+         # !count0 &  count1 & !count2 & !reset &  state2
+         #  count0 & !count1 & !count2 & !reset &  state1 & !state2
+         #  count0 & !count1 & !count2 & !reset & !state1 &  state2
+         #  count1 & !reset &  state1 &  state2;
+
+-- Node name is 'count2' = ':647' 
+-- Equation name is 'count2', type is output 
+ count2  = DFFE( _EQ003 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ003 =  count2 & !reset &  state1 &  state2;
+
+-- Node name is 'DOOR0' = ':711' 
+-- Equation name is 'DOOR0', type is output 
+ DOOR0   = DFFE( _EQ004 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ004 =  count2
+         # !count1
+         # !count0;
+
+-- Node name is 'DOOR1' = ':710' 
+-- Equation name is 'DOOR1', type is output 
+ DOOR1   = DFFE( _EQ005 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ005 =  count2
+         # !count1;
+
+-- Node name is 'DOOR2' = ':709' 
+-- Equation name is 'DOOR2', type is output 
+ DOOR2   = DFFE( _EQ006 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ006 = !count0 & !count1
+         #  count2;
+
+-- Node name is 'DOOR3' = ':708' 
+-- Equation name is 'DOOR3', type is output 
+ DOOR3   = DFFE( _EQ007 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ007 = !count0 & !count1
+         #  count2;
+
+-- Node name is 'DOOR4' = ':707' 
+-- Equation name is 'DOOR4', type is output 
+ DOOR4   = DFFE( _EQ008 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ008 =  count2
+         # !count1;
+
+-- Node name is 'DOOR5' = ':706' 
+-- Equation name is 'DOOR5', type is output 
+ DOOR5   = DFFE( _EQ009 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ009 =  count2
+         # !count1
+         # !count0;
+
+-- Node name is 'FI1' = ':907' 
+-- Equation name is 'FI1', type is output 
+ FI1     = DFFE( _EQ010 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ010 =  count2 &  nextFI1 & !reset & !state1 &  state2
+         #  count0 &  count1 &  nextFI1 & !reset & !state1 &  state2
+         # !count0 & !count2 &  prevFI1 & !reset & !state1 &  state2
+         # !count1 & !count2 &  prevFI1 & !reset & !state1 &  state2
+         #  FI1 & !reset &  state1;
+
+-- Node name is 'FI2' = ':906' 
+-- Equation name is 'FI2', type is output 
+ FI2     = DFFE( _EQ011 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ011 =  count2 &  nextFI2 & !reset & !state1 &  state2
+         #  count0 &  count1 &  nextFI2 & !reset & !state1 &  state2
+         # !count0 & !count2 &  prevFI2 & !reset & !state1 &  state2
+         # !count1 & !count2 &  prevFI2 & !reset & !state1 &  state2
+         #  FI2 & !reset &  state1;
+
+-- Node name is 'FI3' = ':905' 
+-- Equation name is 'FI3', type is output 
+ FI3     = DFFE( _EQ012 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ012 =  count2 &  nextFI3 & !reset & !state1 &  state2
+         #  count0 &  count1 &  nextFI3 & !reset & !state1 &  state2
+         # !count0 & !count2 &  prevFI3 & !reset & !state1 &  state2
+         # !count1 & !count2 &  prevFI3 & !reset & !state1 &  state2
+         #  FI3 & !reset &  state1;
+
+-- Node name is 'FI4' = ':904' 
+-- Equation name is 'FI4', type is output 
+ FI4     = DFFE( _EQ013 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ013 =  count2 &  nextFI4 & !reset & !state1 &  state2
+         #  count0 &  count1 &  nextFI4 & !reset & !state1 &  state2
+         # !count0 & !count2 &  prevFI4 & !reset & !state1 &  state2
+         # !count1 & !count2 &  prevFI4 & !reset & !state1 &  state2
+         #  FI4 & !reset &  state1;
+
+-- Node name is 'FI5' = ':903' 
+-- Equation name is 'FI5', type is output 
+ FI5     = DFFE( _EQ014 $  VCC, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ014 = !FI5 & !reset &  state1
+         #  count2 & !nextFI5 & !reset & !state1 &  state2
+         #  count0 &  count1 & !nextFI5 & !reset & !state1 &  state2
+         # !count0 & !count2 & !prevFI5 & !reset & !state1 &  state2
+         # !count1 & !count2 & !prevFI5 & !reset & !state1 &  state2;
+
+-- Node name is 'FI6' = ':902' 
+-- Equation name is 'FI6', type is output 
+ FI6     = DFFE( _EQ015 $  VCC, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ015 = !FI6 & !reset &  state1
+         #  count2 & !nextFI6 & !reset & !state1 &  state2
+         #  count0 &  count1 & !nextFI6 & !reset & !state1 &  state2
+         # !count0 & !count2 & !prevFI6 & !reset & !state1 &  state2
+         # !count1 & !count2 & !prevFI6 & !reset & !state1 &  state2;
+
+-- Node name is 'FI7' = ':901' 
+-- Equation name is 'FI7', type is output 
+ FI7     = DFFE( _EQ016 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ016 =  count2 &  nextFI7 & !reset & !state1 &  state2
+         #  count0 &  count1 &  nextFI7 & !reset & !state1 &  state2
+         # !count0 & !count2 &  prevFI7 & !reset & !state1 &  state2
+         # !count1 & !count2 &  prevFI7 & !reset & !state1 &  state2
+         #  FI7 & !reset &  state1;
+
+-- Node name is ':811' = 'nextFI1' 
+-- Equation name is 'nextFI1', location is LC039, type is buried.
+nextFI1  = DFFE( _EQ017 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ017 = !reset &  state0 & !state1 & !state2
+         #  nextFI1;
+
+-- Node name is ':810' = 'nextFI2' 
+-- Equation name is 'nextFI2', location is LC034, type is buried.
+nextFI2  = DFFE( _EQ018 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ018 =  nextFI2 &  state1
+         #  nextFI2 & !state0
+         #  nextFI2 &  reset
+         #  nextFI2 &  state2;
+
+-- Node name is ':809' = 'nextFI3' 
+-- Equation name is 'nextFI3', location is LC022, type is buried.
+nextFI3  = DFFE( _EQ019 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ019 = !reset &  state0 & !state1 & !state2
+         #  nextFI3;
+
+-- Node name is ':808' = 'nextFI4' 
+-- Equation name is 'nextFI4', location is LC021, type is buried.
+nextFI4  = DFFE( _EQ020 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ020 = !reset &  state0 & !state1 & !state2
+         #  nextFI4;
+
+-- Node name is ':807' = 'nextFI5' 
+-- Equation name is 'nextFI5', location is LC018, type is buried.
+nextFI5  = DFFE( _EQ021 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ021 =  nextFI5 &  state1
+         #  nextFI5 & !state0
+         #  nextFI5 &  reset
+         #  nextFI5 &  state2;
+
+-- Node name is ':806' = 'nextFI6' 
+-- Equation name is 'nextFI6', location is LC026, type is buried.
+nextFI6  = DFFE( _EQ022 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ022 = !reset &  state0 & !state1 & !state2
+         #  nextFI6;
+
+-- Node name is ':805' = 'nextFI7' 
+-- Equation name is 'nextFI7', location is LC023, type is buried.
+nextFI7  = DFFE( _EQ023 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ023 = !reset &  state0 & !state1 & !state2
+         #  nextFI7;
+
+-- Node name is ':318' = 'nextstate0' 
+-- Equation name is 'nextstate0', location is LC062, type is buried.
+nextstate0 = DFFE( _EQ024 $  VCC, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ024 = !_LC053 & !_LC054 & !_LC055 & !_LC058 & !_LC060 & !_LC061 & 
+             !nextstate0 & !state0
+         # !_LC053 & !_LC054 & !_LC055 & !_LC058 & !_LC060 & !_LC061 & 
+             !nextstate0 &  reset
+         # !nextstate0 & !reset &  state1
+         # !nextstate0 & !reset &  state2;
+
+-- Node name is ':317' = 'nextstate1' 
+-- Equation name is 'nextstate1', location is LC063, type is buried.
+nextstate1 = DFFE( _EQ025 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ025 = !_LC053 & !_LC054 & !_LC055 & !_LC058 & !_LC060 & !_LC061 & 
+              nextstate1 & !state0
+         # !_LC053 & !_LC054 & !_LC055 & !_LC058 & !_LC060 & !_LC061 & 
+              nextstate1 &  reset
+         #  nextstate1 & !reset &  state1
+         #  nextstate1 & !reset &  state2;
+
+-- Node name is ':316' = 'nextstate2' 
+-- Equation name is 'nextstate2', location is LC059, type is buried.
+nextstate2 = DFFE( _EQ026 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ026 = !_LC053 & !_LC054 & !_LC055 & !_LC058 & !_LC060 & !_LC061 & 
+              nextstate2 & !state0
+         # !_LC053 & !_LC054 & !_LC055 & !_LC058 & !_LC060 & !_LC061 & 
+              nextstate2 &  reset
+         #  nextstate2 & !reset &  state1
+         #  nextstate2 & !reset &  state2;
+
+-- Node name is ':775' = 'prevFI1' 
+-- Equation name is 'prevFI1', location is LC042, type is buried.
+prevFI1  = DFFE( _EQ027 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ027 =  prevFI1 &  state1
+         #  prevFI1 & !state0
+         #  prevFI1 &  reset
+         #  prevFI1 &  state2;
+
+-- Node name is ':774' = 'prevFI2' 
+-- Equation name is 'prevFI2', location is LC038, type is buried.
+prevFI2  = DFFE( _EQ028 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ028 =  prevFI2 &  state1
+         #  prevFI2 & !state0
+         #  prevFI2 &  reset
+         #  prevFI2 &  state2;
+
+-- Node name is ':773' = 'prevFI3' 
+-- Equation name is 'prevFI3', location is LC031, type is buried.
+prevFI3  = DFFE( _EQ029 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ029 =  prevFI3 &  state1
+         #  prevFI3 & !state0
+         #  prevFI3 &  reset
+         #  prevFI3 &  state2;
+
+-- Node name is ':772' = 'prevFI4' 
+-- Equation name is 'prevFI4', location is LC029, type is buried.
+prevFI4  = DFFE( _EQ030 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ030 =  prevFI4 &  state1
+         #  prevFI4 & !state0
+         #  prevFI4 &  reset
+         #  prevFI4 &  state2;
+
+-- Node name is ':771' = 'prevFI5' 
+-- Equation name is 'prevFI5', location is LC028, type is buried.
+prevFI5  = DFFE( _EQ031 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ031 = !reset &  state0 & !state1 & !state2
+         #  prevFI5;
+
+-- Node name is ':770' = 'prevFI6' 
+-- Equation name is 'prevFI6', location is LC027, type is buried.
+prevFI6  = DFFE( _EQ032 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ032 = !reset &  state0 & !state1 & !state2
+         #  prevFI6;
+
+-- Node name is ':769' = 'prevFI7' 
+-- Equation name is 'prevFI7', location is LC024, type is buried.
+prevFI7  = DFFE( _EQ033 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ033 =  prevFI7 &  state1
+         #  prevFI7 & !state0
+         #  prevFI7 &  reset
+         #  prevFI7 &  state2;
+
+-- Node name is ':54' = 'read' 
+-- Equation name is 'read', location is LC064, type is buried.
+read     = DFFE( _EQ034 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ034 = !state1 & !state2
+         #  read
+         #  reset;
+
+-- Node name is ':528' = 'state0' 
+-- Equation name is 'state0', location is LC057, type is buried.
+state0   = DFFE( _EQ035 $  _EQ036, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ035 =  count2 &  nextstate0 & !reset &  state1 & !state2
+         #  count0 &  count1 &  nextstate0 & !reset &  state1 & !state2
+         # !count2 & !reset &  state0 &  state1 &  _X001
+         # !reset &  state0 &  state1 &  _X002;
+  _X001  = EXP( count0 &  count1);
+  _X002  = EXP(!nextstate0 & !state2);
+  _EQ036 =  nextstate0 & !reset & !state1 &  state2 &  _X003 &  _X004;
+  _X003  = EXP(!count0 & !count2);
+  _X004  = EXP(!count1 & !count2);
+
+-- Node name is ':527' = 'state1' 
+-- Equation name is 'state1', location is LC056, type is buried.
+state1   = DFFE( _EQ037 $  _EQ038, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ037 =  count2 & !nextstate1 & !reset &  state1 & !state2 &  _X005
+         # !reset & !state0 & !state1 & !state2 &  _X005
+         # !nextstate1 & !reset & !state1 &  state2 &  _X005
+         # !count2 & !reset & !state1 &  state2 &  _X001 &  _X005;
+  _X005  = EXP( count0 &  count1 & !nextstate1 &  state1 & !state2);
+  _X001  = EXP( count0 &  count1);
+  _EQ038 = !reset &  _X005;
+  _X005  = EXP( count0 &  count1 & !nextstate1 &  state1 & !state2);
+
+-- Node name is ':526' = 'state2' 
+-- Equation name is 'state2', location is LC050, type is buried.
+state2   = DFFE( _EQ039 $  _EQ040, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ039 = !_LC053 & !_LC054 & !_LC055 & !_LC058 & !_LC060 & !_LC061 & 
+             !state1 & !state2 &  _X006 &  _X007 &  _X008
+         # !nextstate2 & !reset &  state1 & !state2 &  _X006 &  _X007 & 
+              _X008
+         # !_LC053 & !_LC054 & !_LC055 & !_LC058 & !_LC060 & !_LC061 &  reset & 
+              _X006 &  _X007 &  _X008
+         # !count2 & !reset &  state1 & !state2 &  _X001 &  _X006 &  _X007 & 
+              _X008;
+  _X006  = EXP(!reset &  state0 & !state1 & !state2);
+  _X007  = EXP( count2 & !nextstate2 & !reset & !state1 &  state2);
+  _X008  = EXP( count0 &  count1 & !nextstate2 & !reset & !state1 &  state2);
+  _X001  = EXP( count0 &  count1);
+  _EQ040 =  _X006 &  _X007 &  _X008;
+  _X006  = EXP(!reset &  state0 & !state1 & !state2);
+  _X007  = EXP( count2 & !nextstate2 & !reset & !state1 &  state2);
+  _X008  = EXP( count0 &  count1 & !nextstate2 & !reset & !state1 &  state2);
+
+-- Node name is 'UD' = ':931' 
+-- Equation name is 'UD', type is output 
+ UD      = DFFE( _EQ041 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ041 =  state1 &  UD
+         # !state1 & !state2
+         # !state0 & !state1
+         #  reset;
+
+-- Node name is ':126' 
+-- Equation name is '_LC060', type is buried 
+_LC060   = LCELL( _EQ042 $  GND);
+  _EQ042 = !FB3 &  read
+         #  _LC060;
+
+-- Node name is ':127' 
+-- Equation name is '_LC055', type is buried 
+_LC055   = LCELL( _EQ043 $  GND);
+  _EQ043 = !FB2 &  read
+         #  _LC055;
+
+-- Node name is ':128' 
+-- Equation name is '_LC058', type is buried 
+_LC058   = LCELL( _EQ044 $  GND);
+  _EQ044 = !FB1 &  read
+         #  _LC058;
+
+-- Node name is ':204' 
+-- Equation name is '_LC054', type is buried 
+_LC054   = LCELL( _EQ045 $  GND);
+  _EQ045 = !CALL3 &  read
+         #  _LC054;
+
+-- Node name is ':205' 
+-- Equation name is '_LC053', type is buried 
+_LC053   = LCELL( _EQ046 $  GND);
+  _EQ046 = !CALL2 &  read
+         #  _LC053;
+
+-- Node name is ':206' 
+-- Equation name is '_LC061', type is buried 
+_LC061   = LCELL( _EQ047 $  GND);
+  _EQ047 = !CALL1 &  read
+         #  _LC061;
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Information                             z:\cst231takehome\elevator.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Multi-Level
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = off
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = off
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 0
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = off
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+ADT PALACE Compilation                    = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:01
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:02
+   Partitioner                            00:00:03
+   Fitter                                 00:00:00
+   Timing SNF Extractor                   00:00:01
+   Assembler                              00:00:00
+   --------------------------             --------
+   Total Time                             00:00:07
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 28,428K

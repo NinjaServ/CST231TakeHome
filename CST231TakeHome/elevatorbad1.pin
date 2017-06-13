@@ -1,0 +1,99 @@
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "elevatorbad1" ASSIGNED TO AN EPM7096LC68-7
+GND                              : 1
+GND                              : 2
+VCCINT                           : 3
+reset                            : 4
+RESERVED                         : 5
+GND                              : 6
+countup2                         : 7
+countup1                         : 8
+state0                           : 9
+state1                           : 10
+VCCIO                            : 11
+UD                               : 12
+countup0                         : 13
+FB2                              : 14
+CD                               : 15
+GND                              : 16
+CALL2                            : 17
+CALL3                            : 18
+DOOR0                            : 19
+DOOR1                            : 20
+VCCIO                            : 21
+DOOR5                            : 22
+DOOR4                            : 23
+RESERVED                         : 24
+RESERVED                         : 25
+GND                              : 26
+RESERVED                         : 27
+RESERVED                         : 28
+RESERVED                         : 29
+FB1                              : 30
+VCCIO                            : 31
+CALL1                            : 32
+FB3                              : 33
+GND                              : 34
+VCCINT                           : 35
+:1691                            : 36
+:1690                            : 37
+GND                              : 38
+:1692                            : 39
+:140                             : 40
+:138                             : 41
+RESERVED                         : 42
+VCCIO                            : 43
+:139                             : 44
+RESERVED                         : 45
+RESERVED                         : 46
+RESERVED                         : 47
+GND                              : 48
+DOOR3                            : 49
+DOOR2                            : 50
+RESERVED                         : 51
+RESERVED                         : 52
+VCCIO                            : 53
+RESERVED                         : 54
+RESERVED                         : 55
+move1                            : 56
+RESERVED                         : 57
+GND                              : 58
+RESERVED                         : 59
+RESERVED                         : 60
+RESERVED                         : 61
+RESERVED                         : 62
+VCCIO                            : 63
+RESERVED                         : 64
+move0                            : 65
+GND                              : 66
+clk                              : 67
+GND                              : 68
